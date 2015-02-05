@@ -22,3 +22,8 @@ Things I learned :
 
 - oAuth
 - etags
+- 
+
+Things I plan to do :
+- Throttling
+- Cross session Analytics.
