@@ -21,6 +21,11 @@ import org.springframework.web.filter.ShallowEtagHeaderFilter;
 @EnableAutoConfiguration
 public class Application {
 	
+	@Bean
+    	public CacheManager tweetSearchCacheManager() {
+        return new ConcurrentMapCacheManager("userinfo");
+    	}
+	
 	
 	 @Bean
 	    public ShallowEtagHeaderFilter etagFilter() {
